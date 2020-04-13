@@ -4,28 +4,25 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import com.ifeor.bookdirectory.R
+import kotlinx.android.synthetic.main.fragment_favorites.*
+import moxy.MvpAppCompatFragment
+import moxy.presenter.InjectPresenter
 
-class FavoritesFragment : Fragment() {
+class FavoritesFragment : MvpAppCompatFragment(), FavoritesView {
 
-    private lateinit var favoritesViewModel: FavoritesViewModel
+    @InjectPresenter
+    lateinit var presenter: FavoritesPresenter
+
+    override fun showNoDataText() {
+        id_fragment_favorites_textview.text = (R.string.fragment_favorites_no_data_text).toString()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        favoritesViewModel =
-            ViewModelProviders.of(this).get(FavoritesViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_favorites, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        favoritesViewModel.text.observe(this, Observer {
-            textView.text = it
-        })
-        return root
+        return inflater.inflate(R.layout.fragment_favorites, container, false)
     }
 }

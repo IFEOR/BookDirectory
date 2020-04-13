@@ -2,4 +2,6 @@
     <string name="app_name">BookDirectory</string>
     <string name="title_search">Search</string>
     <string name="title_favorites">Favorites</string>
+    <string name="fragment_search_no_data_text">Нужная книга всегда найдётся :)</string>
+    <string name="fragment_favorites_no_data_text">У каждого должна быть хотя бы одна любимая книга :/</string>
 </resources>
