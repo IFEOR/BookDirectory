@@ -15,7 +15,7 @@ class FavoritesFragment : MvpAppCompatFragment(), FavoritesView {
     lateinit var presenter: FavoritesPresenter
 
     override fun showNoDataText() {
-        id_fragment_favorites_textview.text = (R.string.fragment_favorites_no_data_text).toString()
+        fragment_favorites_textview.text = (R.string.fragment_favorites_no_data_text).toString()
     }
 
     override fun onCreateView(

@@ -8,8 +8,7 @@ import com.ifeor.bookdirectory.R
 fun ImageView.setImagePlaceholder(uri: String?) {
     val options = RequestOptions()
         .placeholder(R.drawable.no_photo)
-        .circleCrop()
-        .error(R.mipmap.ic_launcher_round)
+        .error(R.mipmap.ic_launcher)
     Glide.with(this.context)
         .setDefaultRequestOptions(options)
         .load(uri)
