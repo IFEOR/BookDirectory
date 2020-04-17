@@ -17,8 +17,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:paddingBottom="?attr/actionBarSize"
-            android:layout_marginBottom="@dimen/std_indention"/>
+            android:paddingBottom="118dp" />
 
         <TextView
             android:id="@+id/fragment_search_textview"

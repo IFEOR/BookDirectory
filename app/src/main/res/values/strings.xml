@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">BookDirectory</string>
+    <!-- Bottom Bar -->
     <string name="title_search">Search</string>
     <string name="title_favorites">Favorites</string>
+    <!-- No data-->
     <string name="fragment_search_no_data_text">Нужная книга всегда найдётся :)</string>
     <string name="fragment_favorites_no_data_text">У каждого должна быть хотя бы одна любимая книга :/</string>
+    <!-- Description -->
     <string name="item_book_no_photo_desc">No photo placeholder</string>
+    <!-- Error -->
     <string name="fragment_search_error_text">Возникла проблема с интернет соединением. Проверьте доступность сети и повторите попытку.</string>
     <!-- Menu -->
     <string name="menu_title_text">Фильтры</string>
@@ -13,4 +17,7 @@
     <string name="menu_name_text">По названию</string>
     <string name="menu_genre_text">По жанру</string>
     <string name="menu_edition_text">По изданию</string>
+    <!-- Toolbar -->
+    <string name="search_hint">Что ищем?</string>
+    <string name="search_title">Search</string>
 </resources>

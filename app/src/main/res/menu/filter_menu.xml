@@ -5,8 +5,15 @@
     tools:context=".MainActivity">
 
     <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search_title"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
         android:id="@+id/action_settings"
-        android:icon="@drawable/ic_slider_black"
+        android:icon="@drawable/ic_slider_white"
         android:orderInCategory="100"
         android:title="@string/menu_title_text"
         app:showAsAction="ifRoom">
